@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>区域选择查询</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cityquerymap.css">
+    <script type="text/javascript" src="js/cityquerymap.js"></script>
+  </head>
+  
+  <body>
+    <div id="container">
+       <!--  操作界面 -->
+        <div id="myUI">
+            <div id="subtitle">数据查询系统</div>
+            <div id="tosquery" style="border-bottom: none">行政区划查询</div>
+           <!-- 框选查询 -->
+            <div class="cityquery">
+                <div>
+                    <select name="city" id="city">
+                          
+                    </select>&nbsp;地区
+                    <select name="county" id="county">
+                       <!--  <option value="淇河">淇河</option> -->
+
+                    </select>&nbsp;县城<br/>
+                    <select name="time" id="time">
+                     
+                    </select>&nbsp;时间<br/>
+                </div>
+                
+                <span id="button">提交</span>
+            </div>
+        </div>
+        <div id="databox">
+        <!-- 
+        
+        数据显示窗口
+           <h1 id="h1">请选择左侧位置索引查询数据</h1> 
+         -->
+        </div>
+    </div>
+    <div id="mapdatabv">
+        <div id="clickback">返回</div>
+
+        <img src="" id="bigphoto" alt="" style="position: absolute;">
+        
+    </div>
+    <script>
+   
+    </script>
+  </body>
+</html>

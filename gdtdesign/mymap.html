@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>数据查询系统</title>
+    <link rel="stylesheet" href="./css/mymap.css">
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <script type="text/javascript" src="./js/mymap.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=u2zCdFy3l2jiXFuQGmM1fjjNxmhWiuYh"></script>
+  </head>
+  
+  <body>
+    <div id="container" class="layout">
+       <!--  操作界面 -->
+        <div id="myUI">
+            <div id="subtitle">数据查询系统</div>
+            <div class="mchoose">
+                <span id="tosquery" >行政区划查询</span>
+                <span id="tobquery" style="background:#fff">视口框选查询</span>
+            </div>
+            <!-- 框选查询 -->
+            <div class="boxquery">
+                <div>
+                &nbsp&nbsp起始点坐标：X——Y</br>
+                <input type="text" id="beginx">
+                <input type="text" id="beginy"></br>
+                &nbsp&nbsp移动时点坐标：X——Y</br>
+                <input type="text" id="movex">
+                <input type="text" id="movey"></br>
+                &nbsp&nbsp结束点坐标：X——Y</br>
+                <input type="text" id="stopx">
+                <input type="text" id="stopy"></br>
+                </div>
+            </div> 
+
+            <p>
+            <span id="btnbegin">开始框选</span><span id="btnend">结束框选</span>
+            </p>
+            <div id="submit" class="submit">检索</div>
+        </div>
+        <div id="view">
+            <!-- 地图显示窗口 -->
+            <div id="mapview"></div>
+            <!-- 数据显示窗口 -->
+            <div id="dataview">
+                <div id="clickback">返回地图界面</div><!-- 返回地图界面 -->
+                <!-- 数据显示区域 -->
+                <div id="dataarea">
+                <!-- 数据展示单元 -->
+                        <!-- <div class="datacell">
+                            <div class="imgview">
+                            <img src="data/viewdata/淇河20150505现状图.jpg" alt="" >  
+                            </div>
+                            
+                            <p>北京</p>
+                            <span>坐标</span>
+                            <span>面积</span>
+                        </div>
+                        
+                         <div class="datacell">
+                            <div>
+                            <img src="data/viewdata/淇河20150505现状图.jpg" alt="" class="imgview">  
+                            </div>
+                            
+                            <p>北京</p>
+                            <span>坐标</span>
+                            <span>面积</span>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mapdatabv">
+        <div id="backdata">返回</div>
+
+        <img src="" alt="" id="bigphoto" style="position: absolute;">
+    </div>
+
+  </body>
+</html>
